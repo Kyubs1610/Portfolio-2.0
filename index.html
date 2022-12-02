@@ -13,15 +13,21 @@
 </head>
 <body>
 
-   
+    <img src="./Asset/logo.png" class="logo">
         <header>
-            <img src="./Asset/logo.png" class="logo">
-            <ul id="menu">
-                <li><a href="#about"class="btn">About Me</a></li>
-                <li><a href="#experience"class="btn">Experience</a></li>
-                <li><a href="#work"class="btn">Work</a></li>
-                <li><a href="#contact"class="btn">Contact</a></li>
+            
+            <div class="menu"> 
+            <ul>
+                <li class="list"><a href="#about"class="btn">About Me</a></li>
+                <li class="list"><a href="#experience"class="btn">Experience</a></li>
+                <li class="list"><a href="#work"class="btn">Work</a></li>
+                <li class="list"><a href="#contact"class="btn">Contact</a></li>
+                <div class="indicator"></div>
             </ul>
+        </div>
+
+        
+
         </header>  
         <section id="about"> 
         <div class="intro">
@@ -62,12 +68,16 @@
     </section>
 
 
-    <section id="contact"><h1>Contact</h1> 
-        <h2>
-            <a href="https://www.linkedin.com/in/diego-decort/" target="_blank"><li class="bulle"><img src="linkedin.png" class="logo-medias" ></li></a>
-            <a href="https://www.instagram.com/kyubsd/?hl=fr" target="_blank"> <li class="bulle"><img src="instagram.png" class="logo-medias"></li></a>
-            <a href="https://github.com/Kyubs1610" target="_blank"> <li class="bulle">  <img src="github.png" class="logo-medias"> </li></a>
-                                   </section> </h2>
+    <section id="contact"><h1>Contact</h1> <br>
+    
+    <div class="mediabulle"> 
+        <a href="https://www.linkedin.com/in/diego-decort/" target="_blank"><li class="bulle"><img src="./Asset/linkedin.png" class="logo-medias" ></li></a>
+        <a href="https://www.instagram.com/kyubsd/?hl=fr" target="_blank"> <li class="bulle"><img src="./Asset/instagram.png" class="logo-medias"></li></a>
+        <a href="https://github.com/Kyubs1610" target="_blank"> <li class="bulle">  <img src="./Asset/github.png" class="logo-medias"> </li></a>
+    </div> 
+    </section>
     <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

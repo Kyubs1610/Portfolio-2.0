@@ -1,11 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+
 body{
   background-color: #07020d;
   font-family: 'Aboreto', cursive;  
 }
 
-header{
-  
-}
 .logo{
 height: 150px;
 position:fixed;
@@ -20,6 +20,16 @@ float: left;
   color:#07020d;
   }
 
+.btn:hover{
+ 
+    background-color: #F39C6B;
+    box-shadow: 0px 7px 10px #f46614;
+    color: #5DB7DE;
+    transform: translateY(-7px);
+    
+  }
+
+
 ul{
   display: flex;
   flex-direction: row;
@@ -31,8 +41,11 @@ ul{
   color:black;
 }
 
-li{
-  
+
+
+header{
+  display: flex;
+  justify-content: flex-end;
 }
 section{
   display: flex;
@@ -99,4 +112,33 @@ h3,h1{
     -webkit-transform-origin: 100% 0%;
             transform-origin: 100% 0%;
   }
+}
+
+.bulle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #0d0d0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  background: #f1f1f1;
+  cursor: pointer;
+  position: relative;
+}
+.bulle:hover {
+  background-color: #5DB7DE;
+  box-shadow: 0px 15px 20px #5DB7DE;
+  color: rgb(0, 0, 0);
+  transform: translateY(-7px);
+}
+.logo-medias {
+  width: 40px;
+  height: 40px;
+}
+.mediabulle{
+  display: flex;
+  float:right ;
+  flex-direction: row;
 }
