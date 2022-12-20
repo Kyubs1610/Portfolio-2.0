@@ -29,9 +29,10 @@ body{
 
 
 .logo{
-height: 150px;
-position:fixed;
-float: left;
+height: 120px;
+z-index: 9999;
+position: fixed;
+margin-right: 85rem;
 }
 
 .btn{
@@ -53,6 +54,7 @@ float: left;
 
 ul{
   display: flex;
+  justify-content: center;
   width: 100%;
   list-style-type: none;
   margin: 0;
@@ -61,19 +63,17 @@ ul{
   background-color: #000;
   font-size: 20px;
   position: fixed;
-  z-index: 9999;
+  z-index: 9998;
   opacity: 0.9;
 }
 
 .list {
   display: flex;
-  justify-content: space-around;
-  margin-left: auto;
+   
 }
 
 .list a {
   display: flex;
-  justify-content: space-around;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -247,6 +247,7 @@ h3,h1{
   background: #f1f1f1;
   cursor: pointer;
   position: relative;
+  
 }
 .bulle:hover {
   background-color: #5DB7DE;
@@ -262,4 +263,97 @@ h3,h1{
   display: flex;
   float:right ;
   flex-direction: row;
+  gap:20px;
 }
+
+/* START THE PHOTO GALLERY */
+#hcg-slider-1 .hcg-slide-container {
+	width: auto;
+	height: auto;
+  
+}
+.hcg-slider {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hcg-slide-container {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.hcg-slides {
+	display: none;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	border: solid 1px #a0a0a0;
+}
+.hcg-slides img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+}
+#hcg-slide-prev, #hcg-slide-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	text-decoration: none;
+	text-shadow: 1px 1px 5px #686868;
+}
+#hcg-slide-next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+#hcg-slide-prev {
+	left: 0;
+	border-radius: 0 3px 3px 0;
+}
+#hcg-slide-prev:hover, #hcg-slide-next:hover {
+	background-color: #000c;
+}
+.hcg-slide-dot-control {
+	margin-top: 10px;
+	text-align: center;
+}
+.hcg-slide-dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+.hcg-slide-dot.dot-active {
+	background-color: #717171;
+}
+/************CSS Animation***********/
+
+.animated { 
+	animation-name: fadeInRight; 
+	animation-duration: 1s;
+}
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.fadeInRight {
+	animation-name: fadeInRight;
+}
+
+
